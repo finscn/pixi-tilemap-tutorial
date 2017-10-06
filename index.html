@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.4.3/pixi.min.js"></script>
-    <script src="https://cdn.rawgit.com/pixijs/pixi-tilemap/master/bin/pixi-tilemap.js"></script>
-    <script src="//rawgit.com/mrdoob/stats.js/master/build/stats.min.js"></script>
+    <script src="https://pixijs.download/v4.5.6/pixi.min.js"></script>
+    <script src="lib/pixi-tilemap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 
     var stats = new Stats();
     stats.showPanel(0);
-    document.body.appendChild(stats.dom);
+    document.body.appendChild(stats.domElement);
 
     var app = new PIXI.Application(resolutionX, resolutionY);
     document.body.appendChild(app.view);
